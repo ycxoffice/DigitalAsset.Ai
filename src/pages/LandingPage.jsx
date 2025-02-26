@@ -11,6 +11,7 @@ import {
   Code,
   Wallet,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const DigitalAssetLanding = () => {
   const canvasRef = useRef(null);
@@ -119,10 +120,10 @@ const DigitalAssetLanding = () => {
               digital assets powered by AI analytics.
             </p>
             <div className="flex flex-wrap justify-center gap-6">
-              <button className="group px-8 py-4 bg-gradient-to-r from-turquoise-500 to-blue-500 rounded-xl hover:opacity-90 transition-all duration-300 flex items-center space-x-2">
+              <Link to={'/CompanyList'} className="group px-8 py-4 bg-gradient-to-r from-turquoise-500 to-blue-500 rounded-xl hover:opacity-90 transition-all duration-300 flex items-center space-x-2">
                 <span>Explore Assets</span>
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </Link>
               <button className="px-8 py-4 bg-white/10 rounded-xl hover:bg-white/20 transition-colors duration-300">
                 Learn More
               </button>
